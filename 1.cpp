@@ -4,4 +4,4 @@ int main(){
   int a=10;
   int b=a;
   cout<<a<<endl;
-return 0;
+return 0;}
