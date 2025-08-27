@@ -5,4 +5,3 @@ int main(){
   int b=a;
   cout<<a<<endl;
 return 0;
-}
