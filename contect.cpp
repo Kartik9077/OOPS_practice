@@ -5,19 +5,21 @@ class singleton{
     static singleton* ptr;
     static mutex mtx;
     singleton(){
-        cout<<"this is ingleton class"<<endl;
+        cout<<"this is singleton class"<<endl;
     }
     public:
     static singleton* instance(){
         
-        if(ptr==nullptr){
-            lock_guard<mutex>lock(mtx);
-            ptr=new singleton();
-        }
+        // if(ptr==nullptr){
+        //     lock_guard<mutex>lock(mtx);
+        //     if(ptr==nullptr){
+        //         ptr=new singleton();
+        //     }
+        // }
         return ptr;
     }
 };
-singleton* singleton::ptr=nullptr;
+singleton* singleton::ptr=new singleton();
 mutex singleton:: mtx;
 int main(){
     singleton*a=singleton::instance();
