@@ -2,7 +2,7 @@
 using namespace std;
 class animal{
     public:
-    virtual void bark(){
+   virtual void bark(){
         cout<<"hu hu"<<endl;
     }
 
@@ -14,7 +14,7 @@ class dog:public animal{
     }
 };
 int main(){
-    animal* x=new dog();
+    animal* x=new dog ();
     x->bark();
 
 return 0;

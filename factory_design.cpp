@@ -77,8 +77,5 @@ int main(){
   burger_factory* x=new veg_factory();
   burger * b=x->createburger("classic");
   b->prepare();
-
-
-
 return 0;
 }
